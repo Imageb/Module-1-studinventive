@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+  }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat';
+    padding: auto;
+    position: fixed;
+    background-color:white;
+    width: 100%;
+    height: 40px;  
+    z-index: 1;
+}
+nav img {
+    width: 80px;
+}
+
+.banniere {
+    width: 100%;
+    height : 30%;
+    text-align: center;
+    position: relative;
+}
+
+.banniere div {
+    position: absolute;
+    padding-top: 400px;
+    padding-left: 300px;
+    text-align: right;
+}
+
+
+.banniere h1 {
+    color:white;
+}
+
+.banniere h2 {
+    color:#D5F31F;
+    font-size: 2em;
+    position: absolute;
+}
+
+
+ul {
+    font-size: 0.8em;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap : 20px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.notre-equipe {
+    width: 100%;
+    text-align: center;
+    padding-right: 100px;
+    padding-left:  100px;
+}
+
+.notre-equipe h2 {
+    color: #029D5B;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.equipe {
+    padding : 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.equipe img {
+    width: 150px;
+    margin-bottom: 8px;
+}
+
+.equipe h4 {
+    margin-bottom: 10px ;
+}
+
+.bas-equipe {
+    width: 100%;
+    background-color: #053b44;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
+}
+
+.bas-equipe h2 {
+    color : #D5F31F;
+    text-align: center;
+}
+.bas-equipe p {
+    color : white;
+    text-align: center;
+}
+
+.nos-services {
+    background-color: white;
+    text-align: center;
+}
+
+.nos-services h2 {
+    color: #029D5B;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.web-audit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.web-audit img{
+    width: 200px;
+    background-color:#f2f4f5 ;
+    border-radius: 10px;
+}
+
+.web-audit h2 {
+    font-size : 1em;
+    color: #010101;  
+}
+
+.footer1 {
+    background-color: #053b44;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding : 50px;
+    gap: 40px;
+  }
+
+.footer1 h3 {
+    font-size: 0.7em;
+    padding-bottom : 10px;
+  }
+
+.footer1 p {
+    color: white;
+  }
+
+.footer1 table td {
+    padding: 10px;
+  }
+
+.footer2 {
+    background-color: #032329;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding : 30px;
+  }
+
+.footer2 p {
+    color: white;
+  }
+
+.footer2 a {
+    width: 4px;
+    padding: 10px;
+}
