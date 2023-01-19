@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <nav>
@@ -24,11 +23,12 @@
         </nav>
         <section class="banniere">
             <div>
-                <h1>Bienvenue dans votre</h1>
-                <h2>agence web écologique</h2>
+                <h2>Bienvenue dans votre</h2>
+                <h1>agence web écologique</h1>
             </div>
             <img src="ressources/image_header.jpg" alt="Photo de la banniere">
-        </div>
+            </div>
+        </section>
     </header>
     <main>
         <section class="notre-equipe">
@@ -91,43 +91,107 @@
                 </div>
             </div>
         </section>
+        <section class="contact">
+            <h2 id="contact">Contactez-nous</h2>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium accumsan tempus eget ligula.</h4>
+        <form method="post">
+            <div class="P1-contact">
+                <label>Nom</label>
+                <input type="text" name="nom" required><br>
+                <label>Catégorie</label>
+                <input type="text" name="categorie" required><br>
+                <label>Téléphone</label>
+                <input type="tel" name="tel" required><br>
+                <label>Votre email</label>
+                <input type="Email" name="email" required><br>
+            </div>
+            <div>
+                <label>Votre email</label>
+                    <input type="email" name="email" required><br>
+                <label>Message</label>
+                    <textarea name="message" required></textarea><br>
+                <button type="submit" >Envoyer</button>
+            </div>
+            </form>
+        </section>
+        <section class="A-propos">
+            <div class="img">
+                <img src="ressources/a-propos.jpg" alt="A propos de l'agence">
+            </div>
+            <div class="A-propos-text">
+                <h4>A propos de nous</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                    Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</p>
+                <div class="Nous-logos">
+                        <div><img src="ressources/vector-2.jpg" alt="Picto écologie"></br>
+                        <h5>Ecologique</h5></div>
+                        <div><img src="ressources/vector-3.jpg" alt="Responsable"></br>
+                        <h5>Responsable</h5></div>
+                        <div> <img src="ressources/vector.jpg" alt="assistance"></br>
+                        <h5>24/7 assistance</h5></div>
+                </div>
+            </div>
+        </section>
+        <section class="galerie">
+                <h2 id="galerie">Notre galerie</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                    Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</h4>
+                    <div class="elements">
+                        <div class="element active">
+                            <img src="ressources/dia1.jpg" alt="Image 1">
+                        </div>
+                        <div class="element">
+                            <img src="ressources/dia2.jpg" alt="Image 2">
+                        </div>
+                        <div class="element">
+                            <img src="ressources/dia3.jpg" alt="Image 3">
+                        </div>
+                        </div>
+                            <i id="nav-gauche" class="las la-chevron-left"></i>
+                            <i id="nav-droite" class="las la-chevron-right"></i>
+                        </div>
+                    </div>
+        </section>
     </main>
 </body>
 <footer>
-    <section class="footer1">
-        <div>
-            <h3>Content</h3>
-            <p>consectetur</p>
-            <p>cadipscing</p>
-        </div>
-        <div>
-            <h3>Informations</h3>
-            <p>consectetur</p>
-            <p>cadipscing</p>
-        </div>
-         <div>
-            <h3>Services</h3>
-            <p>consectetur</p>
-            <p>cadipscing</p>
-        </div>
-        <div>
-            <h3>Aide</h3>
-            <p>consectetur</p>
-            <p>cadipscing</p>
-        </div>
-        <div>
-            <table>
-            <tr>
-                <td><img src="ressources/icone-tel.png" alt="icone tel"></td>
-                <td><p>+33 00 00 00 00 <br>+33 00 00 00 00 </p></td><br>
-            </tr>
-            <tr>
-                <td><img src="ressources/icone-lieu.png" alt="icone adresse"></td>
-                <td><p>75001 Paris<br>France</p></td>
-            </tr>
-            </table>
-        </div>
-    </section>
+    <nav class="footer1">
+            <div class="col1">
+                <h3>Content</h3>
+                <ul>
+                    <li><a href="#">consectetur</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">cadipscing</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="#">consectetur</a></li>
+                    <li><a href="#">adipscing</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="#">consectetur/a></li>
+                    <li><a href="#">cadipscing</a></li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h3>Aide</h3>
+                <ul>
+                    <li><a href="#">consectetur</a></li>
+                    <li><a href="#">cadipscings</a></li>
+                </ul>
+            </div>
+            <div class="col5">
+                <li><img src="ressources/icone-tel.png" alt="icone tel"></li>
+                <li><p>+33 00 00 00 00 <br>+33 00 00 00 00 </p></li>
+                <li><img src="ressources/icone-lieu.png" alt="icone adresse"></li>
+                <li><p>75001 Paris<br>France</p></li>
+            </div>
+    </nav>
     <section class="footer2">
         <p>Copyright© 2021 AGENCECO - All rights reserved</p>
         <div>
