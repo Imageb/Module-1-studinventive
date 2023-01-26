@@ -4,7 +4,7 @@
     <meta charset="utf-8" >
     <title>AgencECO,agence web</title>
     <link href="index.css" rel="stylesheet" >
-    <link href="style.css" rel="stylesheet" >
+    <link href="styles.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
@@ -94,25 +94,49 @@
         <section class="contact">
             <h2 id="contact">Contactez-nous</h2>
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium accumsan tempus eget ligula.</h4>
-        <form method="post">
-            <div class="P1-contact">
-                <label>Nom</label>
-                <input type="text" name="nom" required><br>
-                <label>Catégorie</label>
-                <input type="text" name="categorie" required><br>
-                <label>Téléphone</label>
-                <input type="tel" name="tel" required><br>
-                <label>Votre email</label>
-                <input type="Email" name="email" required><br>
+        <form action ="" method="post">
+            <div class="conteneur">
+                <div class="box une">
+                    <p>
+                     <label for="nom">Nom</label></br>
+                    <input type="text" name="nom" id="nom" required>
+                    </p>
+                </div>
+                <div class="box deux">
+                    <p>
+                     <label for="categorie">Catégorie</label></br>
+                    <input type="text" name="categorie" id="categorie">
+                    </p>
+                </div>
+                <div class="box trois">
+                    <p>
+                        <label for="telephone">Téléphone</label></br>
+                        <input type="tel" name="tel" id="tel">
+                    </p>
+                </div>
+                <div class="box quatre">
+                    <p>
+                    <label for="ville">Ville</label></br>
+                        <input type="text" name="ville" id="ville">
+                    </p>
+                </div>
+                <div class="box cinq">
+                    <p>
+                        <label for="email">Votre email</label></br>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+                </div>
+                <div class="box six">
+                    <p>
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message"></textarea>
+                    </p>
+                </div>
             </div>
-            <div>
-                <label>Votre email</label>
-                    <input type="email" name="email" required><br>
-                <label>Message</label>
-                    <textarea name="message" required></textarea><br>
-                <button type="submit" >Envoyer</button>
+            <div class="envoyer">
+              <input type="submit" value="Envoyer">
             </div>
-            </form>
+        </form>
         </section>
         <section class="A-propos">
             <div class="img">
@@ -136,64 +160,61 @@
                 <h2 id="galerie">Notre galerie</h2>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                     Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</h4>
-                    <div class="elements">
-                        <div class="element active">
-                            <img src="ressources/dia1.jpg" alt="Image 1">
-                        </div>
-                        <div class="element">
-                            <img src="ressources/dia2.jpg" alt="Image 2">
-                        </div>
-                        <div class="element">
-                            <img src="ressources/dia3.jpg" alt="Image 3">
-                        </div>
-                        </div>
-                            <i id="nav-gauche" class="las la-chevron-left"></i>
-                            <i id="nav-droite" class="las la-chevron-right"></i>
-                        </div>
+                    <div class="diapo">
+                        <img class= "active" src="ressources/dia1.jpg" alt="Image 1">
+                        <img src="ressources/dia2.jpg" alt="Image 2">
+                        <img src="ressources/dia3.jpg" alt="Image 3">
                     </div>
+                    <div class="fleches">
+                        <div class="fleche-nav left"><</div>
+                        <div class="fleche-nav right">></div>
+                    </div>
+        </section>
+        <section class="nav-bas">
+            <div>
+                <ul>
+                    <h3>Content</h3>
+                    <li><a href ="">consectetur</a></li>
+                    <li><a href ="">adipscing</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <ul>
+                    <h3>Informations</h3>
+                    <li><a href ="">consectetur</a></li>
+                    <li><a href ="">adipscing</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h3>Service</h3>
+                    <li><a href ="">consectetur</a></li>
+                    <li><a href ="">adipscing</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <h3>Aide</h3>
+                    <li><a href ="">consectetur</a></li>
+                    <li><a href ="">adipscing</a></li>
+                </ul>
+            </div>
+            <div class="contact2">
+                <ul>
+                <li><img src="ressources/icone-tel.png" alt="icone tel"></li>
+                <li><p>+33 00 00 00 00</p></br><p>+33 00 00 00 00 </p></li>
+                </ul>
+                <ul>
+                <li><img src="ressources/icone-lieu.png" alt="icone adresse"></li>
+                <li><p>75001 Paris</p></br><p>France</p></li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>
 <footer>
-    <nav class="footer1">
-            <div class="col1">
-                <h3>Content</h3>
-                <ul>
-                    <li><a href="#">consectetur</a></li>
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">cadipscing</a></li>
-                </ul>
-            </div>
-            <div class="col2">
-                <h3>Informations</h3>
-                <ul>
-                    <li><a href="#">consectetur</a></li>
-                    <li><a href="#">adipscing</a></li>
-                </ul>
-            </div>
-            <div class="col3">
-                <h3>Service</h3>
-                <ul>
-                    <li><a href="#">consectetur/a></li>
-                    <li><a href="#">cadipscing</a></li>
-                </ul>
-            </div>
-            <div class="col4">
-                <h3>Aide</h3>
-                <ul>
-                    <li><a href="#">consectetur</a></li>
-                    <li><a href="#">cadipscings</a></li>
-                </ul>
-            </div>
-            <div class="col5">
-                <li><img src="ressources/icone-tel.png" alt="icone tel"></li>
-                <li><p>+33 00 00 00 00 <br>+33 00 00 00 00 </p></li>
-                <li><img src="ressources/icone-lieu.png" alt="icone adresse"></li>
-                <li><p>75001 Paris<br>France</p></li>
-            </div>
-    </nav>
-    <section class="footer2">
-        <p>Copyright© 2021 AGENCECO - All rights reserved</p>
+    <section class="footer">
+        <div><p>Copyright© 2021 AGENCECO - All rights reserved</p></div>
         <div>
             <a target="_blank" href="https://facebook.com/" class="lien-icone">
                 <img src="ressources/logo_fb.png" alt="Logo Twitter" >
@@ -209,4 +230,4 @@
 </footer>
 </body>
 
-</html>
+</html
