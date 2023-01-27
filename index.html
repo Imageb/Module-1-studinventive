@@ -10,42 +10,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <div class="header_logo">
             <img src="ressources/logo_agence.png" alt="Logo AgencECO">
-            <div class="header_nav">
-                <div class="nav_close" onclick="closeMenuMobile"()>
+        </div>
+        <nav class="header_nav">
+                <div class="header_nav_close" onclick="closeMenuMobile()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>                                
                 </div>
-                <ul class="menu" onclick="closeMenuMobile"()>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#equipe">Notre équipe</a></li>
-                    <li><a href="#services">Nos services</a></li>
-                    <li><a href="#contact">Contactez-nous</a></li>
-                    <li><a href="#galerie">Notre galerie</a></li>
+                <ul class="header_nav_menu" onclick="closeMenuMobile()">
+                    <li class="header_nav_menu_link"><a href="index.html">Accueil</a></li>
+                    <li class="header_nav_menu_link"><a href="#equipe">Notre équipe</a></li>
+                    <li class="header_nav_menu_link"><a href="#services">Nos services</a></li>
+                    <li class="header_nav_menu_link"><a href="#contact">Contactez-nous</a></li>
+                    <li class="header_nav_menu_link"><a href="#galerie">Notre galerie</a></li>
                 </ul>  
-            </div>
-            <div class="burger" onclick="openMenuMobile"()>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-            </svg>   
-            </div>
-            <script>
-                function openMenuMobile () {
-                    document.querySelector('header_nav').classList.add('open');
-                }
-
-                function closeMenuMobile () {
-                    document.querySelector('nav_close').classList.remove('open');
-                }
-
-                function closeMenuMobile () {
-                    document.querySelector('menu').classList.remove('open');
-                }
-            </script>
         </nav>
+        <div class="header_burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+        <script>
+            function openMenuMobile() {
+                document.querySelector('.header_nav').classList.add('open');
+            }
+    
+            function closeMenuMobile() {
+                document.querySelector('.header_nav').classList.remove('open');
+            }
+        </script>
         </header>
         <main>
             <section class="banniere">
