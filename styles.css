@@ -81,7 +81,6 @@ header {
 
 .banniere {
     position: relative;
-
 }
 
 .banniere div {
@@ -152,7 +151,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 40px;
     padding: 40px;
 }
 
@@ -337,47 +335,30 @@ input[type='submit'] {
     padding: 15px;
 }
 
-.galerie {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 40px;
+.Notre-galerie {
+    text-align: center;
+    padding: 30px;
 }   
 
-.galerie h2 {
+.Notre-galerie h2 {
     color: #029D5B;
     padding-bottom: 20px;
 }
 
-.galerie h4{
+.Notre-galerie h4{
     padding-bottom: 40px;
     text-align: center;
 }
-
-.diapo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.diapo img{
-    display: none;
+.diapo img {
     border-radius: 20px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
-img.active {
-    display: block;
-    animation: fade 0.8s;
-}
-
 .fleches {
-    width: 100%;
     display : flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 650px;
+    justify-content: space-between;
 }
 
 .fleche-nav {
@@ -395,8 +376,9 @@ img.active {
 
 .nav-bas {
     width: 100%;
+    height: 80px;
     background-color: #053b44;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -412,6 +394,7 @@ img.active {
 
 .nav-bas p, a {
     color: white;
+    text-decoration: none;
   }
 
 .nav-bas img{
@@ -421,21 +404,22 @@ img.active {
 .nav-bas ul{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: left;
-    line-height: 1%;
+    list-style: none;
   }
 
 .contact2 ul {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    padding: 20px;
+    padding: 10px;
 }
 
 .contact2 li {
     line-height: 60%;
+    margin-left: 10px;
 }
-
 
 .footer {
     width: 100%;
