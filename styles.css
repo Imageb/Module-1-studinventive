@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
   }
   
 p {
@@ -31,61 +32,20 @@ h4 {
     font-family: montserrat;
 }
 
-
 nav {
+    background-color: white;
+    width: calc(100% - 40px);
+    min-height: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-family: 'Montserrat';
-    padding: auto;
-    position: fixed;
-    background-color:white;
-    width: 100%;
-    height: 40px;  
+    position: fixed;  
     z-index: 1;
+    padding: 0px 20px;
 }
 
-nav img {
-    width: 80px;
-}
-
-nav a {
-    color:#010101 ;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.banniere {
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.banniere div {
-    position: absolute;
-    padding-top: 400px;
-    padding-left: 600px;
-    text-align: right;
-}
-
-.banniere img {
-  width: 100%;
-    heigth: 500px;
-}
-
-.banniere h1 {
-    color:#D5F31F;
-    font-size: 2em;
-    position: absolute;
-}
-.banniere h2 {
-    color:white;
-}
-
-
-ul {
+.header_nav ul {
     font-size: 0.8em;
     list-style: none;
     display: flex;
@@ -95,58 +55,97 @@ ul {
 
 }
 
-a {
+
+nav img {
+    max-width: 120px;
+}
+
+nav a {
+    color:#010101 ;
+    font-size: 1em;
+    font-weight: bold;
     text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.banniere {
+    position: relative;
+
+}
+
+.banniere div {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    bottom: 3Opx;
+    text-align: right;
+}
+
+.banniere img {
+  width: 100%;
+}
+
+
+.banniere h1 {
+    color:#D5F31F;
+    font-size: 2em;
+
+}
+.banniere h2 {
+    color:white;
+
 }
 
 .notre-equipe {
-    width: 100%;
     text-align: center;
-    padding-bottom: 60px;
+    padding : 50px;
 }
 
 .notre-equipe h2 {
-    color: #029D5B;
-    padding-top: 40px;
+    color: #029D5B;   
     padding-bottom: 20px;
 }
+
 .equipe {
-    position: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
 }
 
 .equipe img {
     width: 160px;
-    margin-bottom: 8px;
+    padding-bottom: 10px; 
 }
 
-.notre-equipe h4 {
-    margin-bottom: 40px ;
-}
 
 .equipe h4 {
-    margin-bottom: 10px;
-    font-size: 16px;
+    color:#032329;
+    font-size: 1em;
+    text-align: center;
 }
 
 .equipe p {
+    padding: 20px;
     font-size: 10px;
-    width: 200px;
+    width: 220px;
+    text-align: center;
 }
 
 .bas-equipe {
-    width: 100%;
     background-color: #053b44;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    gap: 60px;
-    padding: 30px;
+    gap: 40px;
+    padding: 40px;
 }
 
 .bas-equipe h2 {
@@ -169,11 +168,12 @@ a {
     padding-bottom: 60px;
 }
 .web-audit {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    gap: 100px;
+    gap: 60px;
 }
 
 .web-audit img:hover{
@@ -194,7 +194,6 @@ a {
 .contact {
     background-color:#053b44;
     padding : 80px;
-
 }
 .contact h2{
     color : #D5F31F;
@@ -203,8 +202,8 @@ a {
 }
 
 .contact h4 {
-    color : white;.
-    font-size : 2em;
+    color : white;
+    font-size : 1em;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -221,37 +220,33 @@ input, textarea {
 
 label{
     color : white;
-
 }
 
-textarea {
-    height: 160px;
-}
+
 
 .conteneur {
     display: grid;
-    grid-template-columns: 1fr 1 fr 1fr 1fr;
+    grid-template-columns: 1fr 1 fr 1fr ;
     gap: 30px;
-
 }
 
 
 .une {
     display: grid;
-    grid-colum: 1/2;
+    grid-column: 1/2;
     grid-row: 1/2;
 }
 
 .deux {
     display: grid;
-    grid-colum: 2/3;
+    grid-column: 2/3;
     grid-row: 1/2;
 }
 
 
 .trois {
     display: grid;
-    grid-colum: 1/2;
+    grid-column: 1/2;
     grid-row: 2/3;
 }
 
@@ -274,8 +269,8 @@ textarea {
     padding-bottom: 30px;
 }
 
-.textarea {
-    min-height: 300px;
+textarea {
+    min-height: 100px;
   }
 
 .envoyer {
@@ -295,13 +290,12 @@ input[type='submit'] {
 
 
 .A-propos {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 40px;
-    height: 300px;
 }   
 
 .A-propos img{
@@ -336,9 +330,11 @@ input[type='submit'] {
 }
 
 .galerie {
-    width: 100%;
-    text-align: center;
-    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
 }   
 
 .galerie h2 {
@@ -348,6 +344,7 @@ input[type='submit'] {
 
 .galerie h4{
     padding-bottom: 40px;
+    text-align: center;
 }
 
 .diapo {
@@ -357,8 +354,6 @@ input[type='submit'] {
 }
 
 .diapo img{
-    width: 100%;
-    max-width: 700px;
     display: none;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -451,4 +446,80 @@ img.active {
 
 .footer img {
     width: 20%;
+}
+
+.burger { 
+    display: none;
+}
+
+.burger svg {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    color:#053b44;
+}
+
+.nav_close {
+    display: none;
+    }
+.nav_close svg {
+    stroke: white;
+    width: 35px;
+    height: 35px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .header_nav {
+        position : fixed;
+        background-color: rgba(5, 59, 69, 0.95);
+        top: 0px;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        flex-direction: row;
+        transform: translateX(100%);
+        transition: 0.8s transform ease-in-out;
+    
+   }
+
+     .header_nav.open {
+     display: flex;
+   }
+
+    .header_nav ul {
+         display: flex;
+        flex-direction: column;
+        padding: 80px 0px 0px 40px;
+    
+}
+   
+    .header_nav  a {
+        color: white;
+        font-size: 1.7em;
+   }
+
+   .menu a:hover {
+    color:#0c8398;
+}
+
+    .nav_close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.conteneur {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
 }

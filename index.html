@@ -13,74 +13,96 @@
     <header>
         <nav>
             <img src="ressources/logo_agence.png" alt="Logo AgencECO">
-                <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#equipe">Notre équipe</a></li>
-                <li><a href="#services">Nos services</a></li>
-                <li><a href="#contact">Contactez-nous</a></li>
-                <li><a href="#galerie">Notre galerie</a></li>
-                </ul>
+            <div class="header_nav">
+                <div class="nav_close" onclick="closeMenuMobile"()>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>                                
+                </div>
+                <ul class="menu" onclick="closeMenuMobile"()>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#equipe">Notre équipe</a></li>
+                    <li><a href="#services">Nos services</a></li>
+                    <li><a href="#contact">Contactez-nous</a></li>
+                    <li><a href="#galerie">Notre galerie</a></li>
+                </ul>  
+            </div>
+            <div class="burger" onclick="openMenuMobile"()>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>   
+            </div>
+            <script>
+                function openMenuMobile () {
+                    document.querySelector('header_nav').classList.add('open');
+                }
+
+                function closeMenuMobile () {
+                    document.querySelector('nav_close').classList.remove('open');
+                }
+
+                function closeMenuMobile () {
+                    document.querySelector('menu').classList.remove('open');
+                }
+            </script>
         </nav>
-        <section class="banniere">
-            <div>
-                <h2>Bienvenue dans votre</h2>
-                <h1>agence web écologique</h1>
-            </div>
-            <img src="ressources/image_header.jpg" alt="Photo de la banniere">
-            </div>
-        </section>
-    </header>
-    <main>
-        <section class="notre-equipe">
-            <h2 id="equipe">Notre équipe</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</h4>
-            <div class="equipe">
-            <div>
-                <img src="ressources/julie.png" alt="Portait Julie Dupond">
-                <h4>Julie Dupond</h4>
-                <p>
-                Consectetur adipiscing elit. In lectus eu nunc pretium accumsan
-                </p>
-            </div>
-            <div>
-                <img src="ressources/romeo.png" alt="Portait Roméo Sylla">
-                <h4>Roméo Sylla</h4>
-                <p>
+        </header>
+        <main>
+            <section class="banniere">
+                 <div>
+                 <h2>Bienvenue dans votre</h2>
+                 <h1>agence web écologique</h1>
+                </div>
+                <img src="ressources/image_header.jpg" alt="Photo de la banniere">
+            </section>
+            <section class="notre-equipe">
+                <h2 id="equipe">Notre équipe</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</h4>
+                <div class="equipe">
+                <div>
+                    <img src="ressources/julie.png" alt="Portait Julie Dupond">
+                    <h4>Julie Dupond</h4>
+                    <p>
                     Consectetur adipiscing elit. In lectus eu nunc pretium accumsan
-                </p>
-            </div>
-            <div>
-                <img src="ressources/javier.png" alt="Portait Javier Bardem">              
-                <h4>Javier Bardem</h4>
-                <p>
+                    </p>
+                </div>
+                <div>
+                    <img src="ressources/romeo.png" alt="Portait Roméo Sylla">
+                    <h4>Roméo Sylla</h4>
+                    <p>
                     Consectetur adipiscing elit. In lectus eu nunc pretium accumsan
-                </p>
-            </div>
-            </div>
-        </section>
-        <section class="bas-equipe">
+                     </p>
+                 </div>
                 <div>
-                    <h2>2500</h2>
-                    <p>Clients satisfaits</p>
+                    <img src="ressources/javier.png" alt="Portait Javier Bardem">              
+                    <h4>Javier Bardem</h4>
+                    <p>
+                    Consectetur adipiscing elit. In lectus eu nunc pretium accumsan
+                    </p>
                 </div>
-                <div>
-                    <h2>2500</h2>
-                    <p>Clients satisfaits</p>
-                </div>
-                <div>
-                    <h2>2500</h2>
-                    <p>Clients satisfaits</p>
-                </div>
-                <div>
-                    <h2>2500</h2>
-                    <p>Clients satisfaits</p>
                 </div>
             </section>
-        </section>
-        <section class="nos-services">
-            <h2 id="services">Nos services</h2>
-            <div class="web-audit">
+            <section class="bas-equipe">
+                <div>
+                    <h2>2500</h2>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div>
+                    <h2>2500</h2>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div>
+                    <h2>2500</h2>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div>
+                    <h2>2500</h2>
+                    <p>Clients satisfaits</p>
+                </div>
+             </section>
+            <section class="nos-services">
+                <h2 id="services">Nos services</h2>
+                <div class="web-audit">
                 <div>
                     <img src="ressources/vector.png" alt="icone création site web">
                     <h2>Création de site web</h2>
@@ -89,89 +111,87 @@
                     <img src="ressources/vector-1.png" alt="icone audit">
                     <h2>Audit qualité</h2>
                 </div>
-            </div>
-        </section>
-        <section class="contact">
-            <h2 id="contact">Contactez-nous</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium accumsan tempus eget ligula.</h4>
-        <form action ="" method="post">
-            <div class="conteneur">
-                <div class="box une">
+            </section>
+            <section class="contact">
+                <h2 id="contact">Contactez-nous</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium accumsan tempus eget ligula.</h4>
+                <form action ="" method="post">
+                 <div class="conteneur">
+                        <div class="box une">
                     <p>
-                     <label for="nom">Nom</label></br>
+                     <label for="nom">Nom</label>
                     <input type="text" name="nom" id="nom" required>
                     </p>
                 </div>
                 <div class="box deux">
                     <p>
-                     <label for="categorie">Catégorie</label></br>
+                     <label for="categorie">Catégorie</label>
                     <input type="text" name="categorie" id="categorie">
                     </p>
                 </div>
                 <div class="box trois">
                     <p>
-                        <label for="telephone">Téléphone</label></br>
+                        <label for="tel">Téléphone</label>
                         <input type="tel" name="tel" id="tel">
                     </p>
                 </div>
                 <div class="box quatre">
                     <p>
-                    <label for="ville">Ville</label></br>
+                    <label for="ville">Ville</label>
                         <input type="text" name="ville" id="ville">
                     </p>
                 </div>
                 <div class="box cinq">
                     <p>
-                        <label for="email">Votre email</label></br>
+                        <label for="email">Votre email</label>
                         <input type="email" name="email" id="email" required>
                     </p>
                 </div>
                 <div class="box six">
                     <p>
-                        <label for="message">Message</label><br>
+                        <label for="message">Message</label>
                         <textarea name="message" id="message"></textarea>
                     </p>
                 </div>
-            </div>
-            <div class="envoyer">
-              <input type="submit" value="Envoyer">
-            </div>
-        </form>
-        </section>
-        <section class="A-propos">
-            <div class="img">
+                </div>
+                    <div class="envoyer">
+                     <input type="submit" value="Envoyer">
+                </div>
+                </form>
+            </section>
+            <section class="A-propos">
+                <div class="img">
                 <img src="ressources/a-propos.jpg" alt="A propos de l'agence">
-            </div>
-            <div class="A-propos-text">
+                </div>
+                <div class="A-propos-text">
                 <h4>A propos de nous</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                     Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</p>
                 <div class="Nous-logos">
-                        <div><img src="ressources/vector-2.jpg" alt="Picto écologie"></br>
+                        <div><img src="ressources/vector-2.jpg" alt="Picto écologie">
                         <h5>Ecologique</h5></div>
-                        <div><img src="ressources/vector-3.jpg" alt="Responsable"></br>
+                        <div><img src="ressources/vector-3.jpg" alt="Responsable">
                         <h5>Responsable</h5></div>
-                        <div> <img src="ressources/vector.jpg" alt="assistance"></br>
+                        <div> <img src="ressources/vector.jpg" alt="assistance">
                         <h5>24/7 assistance</h5></div>
                 </div>
-            </div>
-        </section>
-        <section class="galerie">
+                </div>
+            </section>
+            <section class="galerie">
                 <h2 id="galerie">Notre galerie</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                    Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</h4>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</h4>
                     <div class="diapo">
                         <img class= "active" src="ressources/dia1.jpg" alt="Image 1">
                         <img src="ressources/dia2.jpg" alt="Image 2">
                         <img src="ressources/dia3.jpg" alt="Image 3">
                     </div>
                     <div class="fleches">
-                        <div class="fleche-nav left"><</div>
-                        <div class="fleche-nav right">></div>
+                        <div class="fleche-nav left"> < </div>
+                        <div class="fleche-nav right"> > </div>
                     </div>
-        </section>
-        <section class="nav-bas">
-            <div>
+             </section>
+            <section class="nav-bas">
+                <div>
                 <ul>
                     <h3>Content</h3>
                     <li><a href ="">consectetur</a></li>
@@ -180,21 +200,21 @@
             </div>
             <div class="col2">
                 <ul>
-                    <h3>Informations</h3>
+                    <li><h3>Informations</h3></li>
                     <li><a href ="">consectetur</a></li>
                     <li><a href ="">adipscing</a></li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <h3>Service</h3>
+                    <li><h3>Service</h3></li>
                     <li><a href ="">consectetur</a></li>
                     <li><a href ="">adipscing</a></li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <h3>Aide</h3>
+                    <li><h3>Aide</h3></li>
                     <li><a href ="">consectetur</a></li>
                     <li><a href ="">adipscing</a></li>
                 </ul>
@@ -202,18 +222,18 @@
             <div class="contact2">
                 <ul>
                 <li><img src="ressources/icone-tel.png" alt="icone tel"></li>
-                <li><p>+33 00 00 00 00</p></br><p>+33 00 00 00 00 </p></li>
+                <li><p>+33 00 00 00 00</p><br><p>+33 00 00 00 00 </p></li>
                 </ul>
                 <ul>
                 <li><img src="ressources/icone-lieu.png" alt="icone adresse"></li>
-                <li><p>75001 Paris</p></br><p>France</p></li>
+                <li><p>75001 Paris</p><br><p>France</p></li>
                 </ul>
             </div>
-        </section>
-    </main>
-</body>
+            </section>
+        </main>
+    </body>
 <footer>
-    <section class="footer">
+    <div class="footer">
         <div><p>Copyright© 2021 AGENCECO - All rights reserved</p></div>
         <div>
             <a target="_blank" href="https://facebook.com/" class="lien-icone">
@@ -226,8 +246,6 @@
                 <img src="ressources/logo_insta.png" alt="Logo Instagram" >
             </a>
         </div>
-    </section>
+    </div>
 </footer>
-</body>
-
-</html
+</html>
