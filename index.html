@@ -113,7 +113,7 @@
                 <h2 id="contact">Contactez-nous</h2>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium accumsan tempus eget ligula.</h4>
                 <form action ="" method="post">
-                 <div class="conteneur">
+                 <div class="container1">
                         <div class="box une">
                     <p>
                      <label for="nom">Nom</label>
@@ -177,14 +177,57 @@
             <section class="Notre-galerie">
                 <h2 id="galerie">Notre galerie</h2>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lectus eu nunc pretium accumsan tempus eget ligula.</h4>
-                <div class="diapo">
-                    <img src="ressources/dia1.jpg" alt="Image 1">
-                </div>
-                <div class="fleches">
-                    <div class="fleche-nav left"> < </div>
-                    <div class="fleche-nav right"> > </div>
+                <div class="container2">
+                    <div class="slider">
+                        <img class="active" src="ressources/dia1.jpg" alt="Image 1">
+                        <img src="ressources/dia2.jpg" alt="Image 2">
+                        <img src="ressources/dia3.jpg" alt="Image 3">
+                     </div>
+                    <div class="cont-btn">
+                        <div class="btn-nav left"> < </div>
+                        <div class="btn-nav left right"> > </div>
+                    </div>
                 </div>
              </section>
+        <script>
+                const items = document.querySelectorAll ('slider')
+                const nbSlide = items.length;
+                const suivant = document.querySelector('.right');
+                const precedent = document.querySelector('.left');
+                let count = 0;
+
+            function slideSuivante(){
+                 items[count].classList.remove('active');
+
+                if(count < nbSlide - 1){
+                    count++;
+                } else {
+                     count = 0;
+                }
+
+                items[count].classList.add('active')
+                console.log(count);
+    
+            }
+            suivant.addEventListener('click', slideSuivante)
+
+
+            function slidePrecedente(){
+                items[count].classList.remove('active');
+
+                if(count > 0){
+                count--;
+                } else {
+                 count = nbSlide - 1;
+                }
+
+                items[count].classList.add('active')
+                 // console.log(count);
+    
+            }
+            precedent.addEventListener('click', slidePrecedente)
+                
+        </script>
             <section class="nav-bas">
                 <div>
                     <ul>

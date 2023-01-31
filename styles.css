@@ -230,7 +230,7 @@ label{
 
 
 
-.conteneur {
+.container1 {
     display: grid;
     grid-template-columns: 1fr 1 fr 1fr ;
     gap: 30px;
@@ -337,7 +337,7 @@ input[type='submit'] {
 
 .Notre-galerie {
     text-align: center;
-    padding: 30px;
+    padding: 50px;
 }   
 
 .Notre-galerie h2 {
@@ -349,19 +349,41 @@ input[type='submit'] {
     padding-bottom: 40px;
     text-align: center;
 }
-.diapo img {
+
+
+
+.slider img {
+    width: 95%;
     border-radius: 20px;
-    width: 100%;
     margin-bottom: 20px;
+    margin-left: 20px;
+    display: none;
 }
 
-.fleches {
+img.active {
+    display: block;
+    animation: fade 0.8s;
+}
+
+@keyframe fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.cont-btn {
     display : flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 85%;
 }
 
-.fleche-nav {
+.btn-nav {
     border-radius: 1000px;
     border:#010101 1px solid;
     padding: 8px 11px 8px 11px;
@@ -369,7 +391,7 @@ input[type='submit'] {
     font-size: 12px;
 }
 
-.fleche-nav:hover {
+.btn-nav:hover {
     background-color: black;
     color: white;
 }
@@ -426,14 +448,14 @@ input[type='submit'] {
     background-color: #032329;
     color: white;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 10px;
    }
 
 .footer p {
     color: white;
+    padding-left: 20px;
   }
 
 .footer img {
@@ -487,7 +509,7 @@ input[type='submit'] {
     100% {
         transform: initial;
     }
-}
+    }
 
 .header_nav_menu {
     display:flex;
